@@ -4228,3 +4228,7 @@ html.is-animating .mil-menu-frame {
   -webkit-transition-delay: 0.3s;
           transition-delay: 0.3s;
 }
+
+.swiper-pagination-bullets{
+  display: none;
+}
