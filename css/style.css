@@ -4820,3 +4820,15 @@ html.is-animating .mil-menu-frame {
   top: -60px;
   right: -4px;
 }
+
+.display-none{
+  display: none !important;
+}
+
+.green-text{
+color: green;
+}
+
+.red-text{
+  color: red;
+}

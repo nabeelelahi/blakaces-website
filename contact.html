@@ -27,7 +27,7 @@
         fbq('track', 'PageView');
     </script>
     <noscript>
-        <img height="1" width="1" style="display:none"
+        <img height="1" width="1" class="display-none"
             src="https://www.facebook.com/tr?id=YOUR_PIXEL_ID&ev=PageView&noscript=1" />
     </noscript>
     <!-- End Meta Pixel Code -->
@@ -62,13 +62,36 @@
   <link rel="stylesheet" href="css/plugins/swiper.min.css" />
   <link rel="stylesheet" href="css/plugins/fancybox.min.css" />
   <link rel="stylesheet" href="css/style.css" />
-    <script type="application/ld+json">
+<script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "Organization",
+  "@type": "LocalBusiness",
+  "@id": "https://blakaces.co/#business",
   "name": "Blakaces",
   "url": "https://blakaces.co",
   "logo": "https://blakaces.co/img/logo-white.webp",
+  "image": "https://blakaces.co/img/logo-white.webp",
+  "telephone": "+92-333-3487134",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Office No. A, 885, Sector 11-A North Karachi",
+    "addressLocality": "Karachi",
+    "postalCode": "75850",
+    "addressCountry": "PK"
+  },
+  "openingHoursSpecification": {
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": [
+      "Monday",
+      "Tuesday",
+      "Wednesday",
+      "Thursday",
+      "Friday",
+      "Saturday"
+    ],
+    "opens": "10:00",
+    "closes": "18:00"
+  },
   "contactPoint": {
     "@type": "ContactPoint",
     "telephone": "+92-333-3487134",
@@ -84,6 +107,7 @@
   ]
 }
 </script>
+
 </head>
 
 <body>
@@ -151,10 +175,10 @@
                                         <a href="/">Homepage</a>
                                     </li>
                                     <li class="mil-has-children">
-                                        <a href="/portfolio">Our Work</a>
+                                        <a href="/portfolio">Our Portfolio</a>
                                     </li>
                                     <li class="mil-has-children">
-                                        <a href="/services">What We Do</a>
+                                        <a href="/services">Our Services</a>
                                     </li>
                                     <li class="mil-has-children">
                                         <a href="/contact">Contact Us</a>
@@ -348,10 +372,10 @@
                                                         <a href="/">Our Homepage</a>
                                                     </li>
                                                     <li class="mil-up">
-                                                        <a href="/portfolio">Our Work</a>
+                                                        <a href="/portfolio">Our Portfolio</a>
                                                     </li>
                                                     <li class="mil-up">
-                                                        <a href="/services">What We Do</a>
+                                                        <a href="/services">Our Services</a>
                                                     </li>
                                                     <li class="mil-up">
                                                         <a href="/contact">Contact Us</a>
@@ -571,14 +595,14 @@
                 .then(data => {
                     const responseDiv = document.getElementById('formResponse');
                     if (data.success) {
-                        responseDiv.innerHTML = '<p style="color: green;">Message sent successfully!</p>';
+                        responseDiv.innerHTML = '<p class="green-text">Message sent successfully!</p>';
                         document.getElementById('contactForm').reset(); // Очистити форму
                     } else {
-                        responseDiv.innerHTML = `<p style="color: red;">Error: ${data.error}</p>`;
+                        responseDiv.innerHTML = `<p class="red-text">Error: ${data.error}</p>`;
                     }
                 })
                 .catch(error => {
-                    document.getElementById('formResponse').innerHTML = `<p style="color: red;">An unexpected error occurred: ${error.message}</p>`;
+                    document.getElementById('formResponse').innerHTML = `<p class="red-text">An unexpected error occurred: ${error.message}</p>`;
                 });
         });
 
