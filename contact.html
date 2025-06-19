@@ -10,26 +10,59 @@
         gtag('js', new Date());
         gtag('config', 'G-XXXXXXX');
     </script>
-    <meta name="robots" content="noindex, nofollow" />
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Meta Pixel Code -->
+    <script>
+        !function (f, b, e, v, n, t, s) {
+            if (f.fbq) return; n = f.fbq = function () {
+                n.callMethod ?
+                n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+            };
+            if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+            n.queue = []; t = b.createElement(e); t.async = !0;
+            t.src = v; s = b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t, s)
+        }(window, document, 'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', 'YOUR_PIXEL_ID');
+        fbq('track', 'PageView');
+    </script>
+    <noscript>
+        <img height="1" width="1" style="display:none"
+            src="https://www.facebook.com/tr?id=YOUR_PIXEL_ID&ev=PageView&noscript=1" />
+    </noscript>
+    <!-- End Meta Pixel Code -->
 
-    <!-- bootstrap grid css -->
-    <link rel="stylesheet" href="css/plugins/bootstrap-grid.css">
-    <!-- font awesome css -->
-    <link rel="stylesheet" href="css/plugins/font-awesome.min.css">
-    <!-- swiper css -->
-    <link rel="stylesheet" href="css/plugins/swiper.min.css">
-    <!-- fancybox css -->
-    <link rel="stylesheet" href="css/plugins/fancybox.min.css">
-    <!-- ashley scss -->
-    <link rel="stylesheet" href="css/style.css">
-    <!-- page name -->
-    <title>Blakaces</title>
-    <!-- favicon icon -->
-    <link rel="icon" type="image/x-icon" href="img/favicon.webp">
-        <script type="application/ld+json">
+    <meta name="robots" content="noindex, nofollow" />
+    <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+  <title>Contact Us | Blakaces – Creative Design, Marketing & Development Agency</title>
+  <meta name="description" content="Get in touch with Blakaces, a creative design and digital agency based in Karachi, Pakistan. Contact us for branding, marketing, or development services." />
+  <meta name="keywords" content="contact Blakaces, creative agency Karachi, digital agency Pakistan, marketing agency contact, web development contact" />
+  <meta name="author" content="Blakaces" />
+
+  <meta property="og:title" content="Contact Blakaces – Creative Design & Marketing Experts" />
+  <meta property="og:description" content="Reach out to Blakaces for creative design, marketing, branding, and development services in Pakistan." />
+  <meta property="og:url" content="https://blakaces.co//contact" />
+  <meta property="og:image" content="https://blakaces.co/img/og-image.jpg" />
+  <meta property="og:type" content="website" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Contact Blakaces – Web, Design, and Marketing Agency" />
+  <meta name="twitter:description" content="Creative, strategic, and impactful—get in touch with Blakaces today." />
+  <meta name="twitter:image" content="https://blakaces.co/img/og-image.jpg" />
+
+  <link rel="canonical" href="https://blakaces.co//contact" />
+
+  <link rel="icon" type="image/x-icon" href="img/favicon.webp" />
+
+  <link rel="stylesheet" href="css/plugins/bootstrap-grid.css" />
+  <link rel="stylesheet" href="css/plugins/font-awesome.min.css" />
+  <link rel="stylesheet" href="css/plugins/swiper.min.css" />
+  <link rel="stylesheet" href="css/plugins/fancybox.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+    <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "Organization",
@@ -47,7 +80,7 @@
     "https://www.facebook.com/Blakaces.co/",
     "https://linkedin.com/company/blakaces",
     "https://github.com/blakaces",
-    "https://youtube.com/@blakaces"
+    "https://www.youtube.com/channel/UCZ1FCXu6uAhE6YkAsKQDGNg"
   ]
 }
 </script>
@@ -99,7 +132,7 @@
         <div class="mil-menu-frame">
             <!-- frame clone -->
             <div class="mil-frame-top">
-                <a href="index.html" class="mil-logo">
+                <a href="/" class="mil-logo">
                     <img height="50px" src="img/web-icon.webp" alt="img" />
                 </a>
                 <div class="mil-menu-btn">
@@ -115,16 +148,16 @@
                             <nav class="mil-main-menu" id="swupMenu">
                                 <ul>
                                     <li class="mil-active">
-                                        <a href="index.html">Homepage</a>
+                                        <a href="/">Homepage</a>
                                     </li>
                                     <li class="mil-has-children">
-                                        <a href="portfolio.html">Our Work</a>
+                                        <a href="/portfolio">Our Work</a>
                                     </li>
                                     <li class="mil-has-children">
-                                        <a href="services.html">What We Do</a>
+                                        <a href="/services">What We Do</a>
                                     </li>
                                     <li class="mil-has-children">
-                                        <a href="contact.html">Contact Us</a>
+                                        <a href="/contact">Contact Us</a>
                                     </li>
                                     <!-- <li class="mil-has-children">
                                         <a href="#.">Newsletter</a>
@@ -137,7 +170,7 @@
                                         <a href="#.">Other pages</a>
                                         <ul>
                                             <li><a href="team.html">Team</a></li>
-                                            <li><a href="contact.html">Contact</a></li>
+                                            <li><a href="/contact">Contact</a></li>
                                             <li><a href="404.html">404</a></li>
                                         </ul>
                                     </li> -->
@@ -214,7 +247,7 @@
         <!-- frame -->
         <div class="mil-frame">
             <div class="mil-frame-top">
-                <a href="index.html" class="mil-logo">
+                <a href="/" class="mil-logo">
                     <img class="grey-scale" height="50px" src="img/web-icon.webp" alt="img" />
                 </a>
                 <div class="mil-menu-btn">
@@ -241,8 +274,8 @@
                     <div class="mil-banner-content mil-center mil-up">
                         <div class="container">
                             <ul class="mil-breadcrumbs mil-center mil-mb-60">
-                                <li><a href="index.html">Homepage</a></li>
-                                <li><a href="contact.html">Contact</a></li>
+                                <li><a href="/">Homepage</a></li>
+                                <li><a href="/contact">Contact</a></li>
                             </ul>
                             <h1 class="mil-mb-60">Contact Blakaces – Let’s Create Something Great</h1>
                             <a href="#contact" class="mil-link mil-dark mil-arrow-place mil-down-arrow">
@@ -312,16 +345,16 @@
                                             <nav class="mil-footer-menu mil-mb-60">
                                                 <ul>
                                                     <li class="mil-up mil-active">
-                                                        <a href="index.html">Our Homepage</a>
+                                                        <a href="/">Our Homepage</a>
                                                     </li>
                                                     <li class="mil-up">
-                                                        <a href="portfolio.html">Our Work</a>
+                                                        <a href="/portfolio">Our Work</a>
                                                     </li>
                                                     <li class="mil-up">
-                                                        <a href="services.html">What We Do</a>
+                                                        <a href="/services">What We Do</a>
                                                     </li>
                                                     <li class="mil-up">
-                                                        <a href="contact.html">Contact Us</a>
+                                                        <a href="/contact">Contact Us</a>
                                                     </li>
                                                 </ul>
                                             </nav>

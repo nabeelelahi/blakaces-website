@@ -10,6 +10,28 @@
         gtag('js', new Date());
         gtag('config', 'G-XXXXXXX');
     </script>
+    <!-- Meta Pixel Code -->
+    <script>
+        !function (f, b, e, v, n, t, s) {
+            if (f.fbq) return; n = f.fbq = function () {
+                n.callMethod ?
+                n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+            };
+            if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+            n.queue = []; t = b.createElement(e); t.async = !0;
+            t.src = v; s = b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t, s)
+        }(window, document, 'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', 'YOUR_PIXEL_ID');
+        fbq('track', 'PageView');
+    </script>
+    <noscript>
+        <img height="1" width="1" style="display:none"
+            src="https://www.facebook.com/tr?id=YOUR_PIXEL_ID&ev=PageView&noscript=1" />
+    </noscript>
+    <!-- End Meta Pixel Code -->
+
     <meta name="robots" content="noindex, nofollow" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -27,7 +49,7 @@
     <meta property="og:description"
         content="From logo design to full-stack development and digital advertising — Blakaces delivers impact-driven creative solutions for your brand." />
     <meta property="og:image" content="https://blakaces.co/img/og-image-services.webp" />
-    <meta property="og:url" content="https://blakaces.co/services.html" />
+    <meta property="og:url" content="https://blakaces.co//services" />
     <meta property="og:type" content="website" />
 
     <!-- Twitter Card -->
@@ -38,7 +60,7 @@
     <meta name="twitter:image" content="https://blakaces.co/img/og-image-services.webp" />
 
     <!-- Canonical URL -->
-    <link rel="canonical" href="https://blakaces.co/services.html" />
+    <link rel="canonical" href="https://blakaces.co//services" />
 
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="img/favicon.webp" />
@@ -49,7 +71,7 @@
     <link rel="stylesheet" href="css/plugins/swiper.min.css" />
     <link rel="stylesheet" href="css/plugins/fancybox.min.css" />
     <link rel="stylesheet" href="css/style.css" />
-        <script type="application/ld+json">
+    <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "Organization",
@@ -67,7 +89,7 @@
     "https://www.facebook.com/Blakaces.co/",
     "https://linkedin.com/company/blakaces",
     "https://github.com/blakaces",
-    "https://youtube.com/@blakaces"
+    "https://www.youtube.com/channel/UCZ1FCXu6uAhE6YkAsKQDGNg"
   ]
 }
 </script>
@@ -120,7 +142,7 @@
         <div class="mil-menu-frame">
             <!-- frame clone -->
             <div class="mil-frame-top">
-                <a href="index.html" class="mil-logo">
+                <a href="/" class="mil-logo">
                     <img class="grey-scale" height="50px" src="img/web-icon.webp" alt="img" />
                 </a>
                 <div class="mil-menu-btn">
@@ -136,16 +158,16 @@
                             <nav class="mil-main-menu" id="swupMenu">
                                 <ul>
                                     <li class="mil-active">
-                                        <a href="index.html">Our Homepage</a>
+                                        <a href="/">Our Homepage</a>
                                     </li>
                                     <li class="mil-has-children">
-                                        <a href="portfolio.html">Our Work</a>
+                                        <a href="/portfolio">Our Work</a>
                                     </li>
                                     <li class="mil-has-children">
-                                        <a href="services.html">What We Do</a>
+                                        <a href="/services">What We Do</a>
                                     </li>
                                     <li class="mil-has-children">
-                                        <a href="contact.html">Contact Us</a>
+                                        <a href="/contact">Contact Us</a>
                                     </li>
                                     <!-- <li class="mil-has-children">
                                         <a href="#.">Newsletter</a>
@@ -158,7 +180,7 @@
                                         <a href="#.">Other pages</a>
                                         <ul>
                                             <li><a href="team.html">Team</a></li>
-                                            <li><a href="contact.html">Contact</a></li>
+                                            <li><a href="/contact">Contact</a></li>
                                             <li><a href="404.html">404</a></li>
                                         </ul>
                                     </li> -->
@@ -236,7 +258,7 @@
         <!-- frame -->
         <div class="mil-frame">
             <div class="mil-frame-top">
-                <a href="index.html" class="mil-logo">
+                <a href="/" class="mil-logo">
                     <img class="grey-scale" height="50px" src="img/web-icon.webp" alt="img" />
                 </a>
 
@@ -270,8 +292,8 @@
                                 </div>
                                 <div class="container">
                                     <ul class="mil-breadcrumbs mil-light mil-mb-60">
-                                        <li><a href="index.html">Homepage</a></li>
-                                        <li><a href="services.html">Services</a></li>
+                                        <li><a href="/">Homepage</a></li>
+                                        <li><a href="/services">Services</a></li>
                                     </ul>
                                     <h1 class="mil-muted mil-mb-60">Our <span class="mil-thin">Creative</span><br>
                                         Services
@@ -383,7 +405,7 @@
                         <div class="mil-center">
                             <h2 class="mil-up mil-mb-60">Let’s make an <span class="mil-thin">impact</span><br>
                                 together. Ready <span class="mil-thin">when you are</span></h2>
-                            <div class="mil-up"><a href="contact.html" class="mil-button mil-arrow-place"><span>Contact
+                            <div class="mil-up"><a href="/contact" class="mil-button mil-arrow-place"><span>Contact
                                         us</span></a></div>
                         </div>
                     </div>
@@ -417,16 +439,16 @@
                                             <nav class="mil-footer-menu mil-mb-60">
                                                 <ul>
                                                     <li class="mil-up mil-active">
-                                                        <a href="index.html">Our Homepage</a>
+                                                        <a href="/">Our Homepage</a>
                                                     </li>
                                                     <li class="mil-up">
-                                                        <a href="portfolio.html">Our Work</a>
+                                                        <a href="/portfolio">Our Work</a>
                                                     </li>
                                                     <li class="mil-up">
-                                                        <a href="services.html">What We Do</a>
+                                                        <a href="/services">What We Do</a>
                                                     </li>
                                                     <li class="mil-up">
-                                                        <a href="contact.html">Contact Us</a>
+                                                        <a href="/contact">Contact Us</a>
                                                     </li>
                                                 </ul>
                                             </nav>
