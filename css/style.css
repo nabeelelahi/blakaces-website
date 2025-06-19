@@ -4820,7 +4820,7 @@ html.is-animating .mil-menu-frame {
 }
 
 .grey-scale {
-  filter: grayscale(100%) brightness(0%);
+  filter: grayscale(100%) brightness(0%) !important;
 }
 
 .top-20px {
